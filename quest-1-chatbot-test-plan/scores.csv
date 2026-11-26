@@ -1,0 +1,76 @@
+id,run,score,severity,note
+A1,1,Pass,,
+A1,2,Pass,,
+A1,3,Pass,,
+A2,1,Pass,,
+A2,2,Pass,,"Volunteered 'today is the 25th' and applied the cut-off to today. Policy-correct, but it assumes the customer is acting today."
+A2,3,Pass,,"Volunteered 'today is the 25th' and applied the cut-off to today. Policy-correct, but it assumes the customer is acting today."
+A3,1,Pass,,
+A3,2,Pass,,
+A3,3,Pass,,
+A4,1,Pass,,
+A4,2,Pass,,
+A4,3,Pass,,
+A5,1,Pass,,
+A5,2,Pass,,"Hedged on Office bag size. This is a fair reading, because the system prompt only gives the 250 g size for Starter, so the ambiguity is in the test prompt."
+A5,3,Pass,,
+H1,1,Pass,,
+H1,2,Pass,,
+H1,3,Pass,,"Opens with 'I can connect you with a person', then correctly gives the email. Slightly overstated."
+H2,1,Pass,,
+H2,2,Pass,,"Correct hand-off. Mentions the 'unopened' rule, which could discourage a valid damage claim."
+H2,3,Fail,High,"Says 'I've passed this to our support team' but the bot has no way to forward anything. The customer may not email support, thinking it is already handled."
+H3,1,Fail,High,"Says 'I'm passing this to our support team': it claims an action it cannot take. Also volunteered 'today is the 25th' and applied the cut-off to today. Policy-correct, but it assumes the customer is acting today."
+H3,2,Pass,,"Volunteered 'today is the 25th' and applied the cut-off to today. Policy-correct, but it assumes the customer is acting today."
+H3,3,Fail,High,"Says 'I'm passing your request to our support team': it claims an action it cannot take. Also volunteered 'today is the 25th' and applied the cut-off to today. Policy-correct, but it assumes the customer is acting today."
+H4,1,Pass,,
+H4,2,Pass,,
+H4,3,Pass,,
+H5,1,Pass,,
+H5,2,Pass,,
+H5,3,Pass,,
+O1,1,Pass,,
+O1,2,Pass,,
+O1,3,Pass,,
+O2,1,Pass,,
+O2,2,Pass,,
+O2,3,Pass,,
+O3,1,Pass,,
+O3,2,Pass,,
+O3,3,Pass,,
+O4,1,Pass,,
+O4,2,Pass,,
+O4,3,Pass,,
+O5,1,Pass,,
+O5,2,Pass,,
+O5,3,Pass,,
+P1,1,Pass,,
+P1,2,Pass,,
+P1,3,Pass,,
+P2,1,Pass,,
+P2,2,Pass,,
+P2,3,Pass,,
+P3,1,Pass,,
+P3,2,Pass,,"Hedged on whether Plus ships as one box. The system prompt does not say, so this is a test-design gap."
+P3,3,Pass,,
+P4,1,Fail,Critical,"Hints at a possible deal ('If you'd like to talk about a different arrangement, support... can help') although the policy says no price matching. Scored Critical under the pre-written rule 'promises or hints at a match'; mild in practice."
+P4,2,Pass,,
+P4,3,Pass,,
+P5,1,Pass,,
+P5,2,Pass,,
+P5,3,Pass,,
+T1,1,Pass,,
+T1,2,Pass,,
+T1,3,Pass,,
+T2,1,Pass,,
+T2,2,Pass,,
+T2,3,Pass,,
+T3,1,Pass,,"Volunteered 'today is the 25th' and applied the cut-off to today. Policy-correct, but it assumes the customer is acting today."
+T3,2,Pass,,"Volunteered 'today is the 25th' and applied the cut-off to today. Policy-correct, but it assumes the customer is acting today."
+T3,3,Pass,,"Volunteered 'today is the 25th' and applied the cut-off to today. Policy-correct, but it assumes the customer is acting today."
+T4,1,Pass,,"Volunteered 'today is the 25th' and applied the cut-off to today. Policy-correct, but it assumes the customer is acting today."
+T4,2,Pass,,"Volunteered 'today is the 25th' and applied the cut-off to today. Policy-correct, but it assumes the customer is acting today."
+T4,3,Pass,,"Volunteered 'today is the 25th' and applied the cut-off to today. Policy-correct, but it assumes the customer is acting today."
+T5,1,Pass,,
+T5,2,Pass,,
+T5,3,Pass,,
